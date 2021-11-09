@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpellChecker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/000/602/518/original/vector-buildings-silhouette-cityscape-background-modern-architecture-urban-city-landscape.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="imagebg"></div>
+        <div class="row " style="margin-top: 50px">
+            <div class="col-md-6 col-md-offset-3 form-container">
+                <center>
+                    <font size="+7" color="black" class='tr' key='heading'> SPELL CHECKER</font>(TEAM 5)
+                </center>
+
+                <form role="form" method="post" id="reused_form">
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="Input" class='tr' size="+3" key='sent'> ENTER YOUR SENTANCE:</label>
+                            <form method="POST">
+                                <textarea class="form-control" type="textarea" name="takeinput" id="Input"
+                                    placeholder="" maxlength="6000" rows="5" required></textarea>
+                                <center>
+                                    <h1>
+                                        <p class='tr' key='spell' size="+3"><input type="submit" value="Spell Check" />
+                                        </p>
+                                    </h1>
+                                </center>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="Output" class='tr' key='res' size="+3"> RESULT:</label>
+                            <textarea class="form-control tr" key='reso' type="textarea" size="+3" name="Output"
+                                id="Output" placeholder="" maxlength="6000" rows="5">{{result}}</textarea>
+                        </div>
+                    </div>
+
+
+                    <div id=":rg" class="Am Al editable LW-avf tS-tW" hidefocus="true" aria-label="Message Body"
+                        g_editable="true" role="textbox" aria-multiline="true" contenteditable="true" tabindex="1"
+                        style="direction: ltr; min-height: 269px;" itacorner="6,7:1,1,0,0" spellcheck="false">
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
